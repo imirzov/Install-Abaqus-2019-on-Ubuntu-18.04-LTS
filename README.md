@@ -3,7 +3,7 @@
 
 ## INSTALLATION
 
-From downloaded archives untar all to */opt/Abaqus*, and merge all duplicates. 
+From downloaded archives untar all to */opt/Abaqus*, and merge all duplicates.  
 */opt/Abaqus* should have folders '1', '2' etc. inside.
 
     sudo chmod -R 777 /opt/Abaqus/*
@@ -17,7 +17,7 @@ Install prerequisites:
     sudo apt install ksh gcc g++ gfortran libstdc++5 build-essential make libjpeg62
     sudo apt install libmotif-dev libmotif-common rpm
 
-Install license to */opt/SIMULIA/License*. Restart computer, license should start.
+Install license to */opt/SIMULIA/License*. Restart computer, license should start.  
 Or later configure network license server without restart.
 
 <!--
@@ -109,7 +109,8 @@ Create shortcut for Viewer:
     Categories=Science;
 ```
 
-Then make *.desktop executable: *Properties-->Permissions-->Allow executing file as program*
+Then make *.desktop executable:  
+*Properties-->Permissions-->Allow executing file as program*.
 
 
 ## MIMETYPES
@@ -184,7 +185,7 @@ Open Abaqus CAE and check if it uses *Courier-New* and *Verdana* fonts:
 
 Increase font size: https://kb.dsxclient.3ds.com/mashup-ui/page/resultqa?id=QA00000008675e
 
-Use *xfontsel* to check if chosen font is available on system
+Use *xfontsel* to check if chosen font is available on system.
 
 Install MS core fonts and RESTART:
 
