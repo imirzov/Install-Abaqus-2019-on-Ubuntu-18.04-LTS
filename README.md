@@ -8,7 +8,7 @@ From downloaded archives untar all to */opt/Abaqus*, and merge all duplicates.
 
     sudo chmod -R 777 /opt/Abaqus/*
 
-Download and copy *libpng12.so.0* to all folders with *DSYInsAppliGUI*:
+Copy *libpng12.so.0* to all folders with *DSYInsAppliGUI*:
 
     //linux_a64/code/bin/
 
@@ -16,13 +16,6 @@ Install prerequisites:
 
     sudo apt install ksh gcc g++ gfortran libstdc++5 build-essential make libjpeg62
     sudo apt install libmotif-dev libmotif-common rpm
-
-Install MS core fonts and RESTART!
-
-    sudo apt install ttf-mscorefonts-installer
-<!--
-    sudo apt install xfonts-utils xfonts-100dpi xfonts-encodings
--->
 
 Install license to */opt/SIMULIA/License*. Restart computer, license should start.
 Or later configure network license server without restart.
@@ -189,11 +182,16 @@ Open Abaqus CAE and check if it uses *Courier-New* and *Verdana* fonts:
 
     lsof -c ABQcaeK | grep fonts
 
-Increase font size:
-
-https://kb.dsxclient.3ds.com/mashup-ui/page/resultqa?id=QA00000008675e
+Increase font size: https://kb.dsxclient.3ds.com/mashup-ui/page/resultqa?id=QA00000008675e
 
 Use *xfontsel* to check if chosen font is available on system
+
+Install MS core fonts and RESTART:
+
+    sudo apt install ttf-mscorefonts-installer
+<!--
+    sudo apt install xfonts-utils xfonts-100dpi xfonts-encodings
+-->
 
 Edit dictionaries:
 
