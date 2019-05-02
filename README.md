@@ -251,3 +251,8 @@ Process hangs and doesn't finish:
 
 
 How to avoid strange Fox-windows? After each start delete file $HOME/abaqus_2019.gpr?
+
+
+## TODO
+
+Have a look on http://learningpatterns.me/posts-output/2018-01-30-abaqus-singularity/
