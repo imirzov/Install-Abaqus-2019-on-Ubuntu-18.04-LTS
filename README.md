@@ -141,10 +141,10 @@ Create file:
 ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-    <mime-type type="application/abaquscae">
-        <comment>Abaqus CAE</comment>
-        <glob pattern="*.cae"/>
-    </mime-type>
+        <mime-type type="application/abaquscae">
+            <comment>Abaqus CAE</comment>
+            <glob pattern="*.cae"/>
+        </mime-type>
     </mime-info>
 ```
 
@@ -155,10 +155,10 @@ Create file:
 ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-    <mime-type type="application/abaqusviewer">
-        <comment>Abaqus Viewer</comment>
-        <glob pattern="*.odb"/>
-    </mime-type>
+        <mime-type type="application/abaqusviewer">
+            <comment>Abaqus Viewer</comment>
+            <glob pattern="*.odb"/>
+        </mime-type>
     </mime-info>
 ```
 
