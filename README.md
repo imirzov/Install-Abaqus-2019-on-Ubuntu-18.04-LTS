@@ -172,11 +172,13 @@ Then update MIME database:
 
     sudo update-mime-database /usr/share/mime
 
+<!--
 Create icons for Abaqus file types:
 
     sudo cp /media/ihor/WORK/Soft/WORK/Abaqus/Info/3DS.svg /usr/share/icons/Humanity/mimes/256/application-abaquscae.svg
     sudo cp /media/ihor/WORK/Soft/WORK/Abaqus/Info/3DS.svg /usr/share/icons/Humanity/mimes/256/application-abaqusviewer.svg
     sudo gtk-update-icon-cache /usr/share/icons/Humanity -f
+-->
 
 Additionally install "MIME Type Editor" via software and edit file associations.
 
