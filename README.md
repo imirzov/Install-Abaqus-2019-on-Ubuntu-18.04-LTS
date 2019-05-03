@@ -83,7 +83,7 @@ Create shortcut for CAE:
 
     gedit ~/.local/share/applications/abaquscae.desktop
 
-```
+```desktop
     [Desktop Entry]
     Type=Application
     Version=1.0
