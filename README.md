@@ -1,5 +1,8 @@
 # Install Abaqus 2019 on Ubuntu 18.04 LTS
 
+<br/><br/>
+
+
 
 ## INSTALLATION
 
@@ -52,6 +55,8 @@ Connect Abaqus to online documentation and license:
     license_server_type=FLEXNET
     abaquslm_license_file="27800@127.0.0.1"
 ```
+
+<br/><br/>
 
 
 
@@ -113,6 +118,9 @@ Create shortcut for Viewer:
 
 Then make *.desktop executable:  
 *Properties-->Permissions-->Allow executing file as program*.
+
+<br/><br/>
+
 
 
 ## MIMETYPES
@@ -178,6 +186,9 @@ Create icons for Abaqus file types:
 
 Additionally install "MIME Type Editor" via software and edit file associations.
 
+<br/><br/>
+
+
 
 ## FONTS
 
@@ -228,6 +239,10 @@ For big displays font HELVETICA and sizes 17-20-25 are more appropriate:
 #http://marklodato.github.io/2014/02/23/fixed-fonts.html
 -->
 
+<br/><br/>
+
+
+
 ## FORTRAN
 
 To use *gfortran* edit:
@@ -241,6 +256,8 @@ as follows:
 - link_sl: remove command line options ‘-V’, ‘-cxxlib’, ‘-threads’, ‘-parallel’, ‘-shared-intel’
 - add '-lgfortran' to the link_sl and link_exe lines
 
+<br/><br/>
+
 
 
 ## BUGS
@@ -248,11 +265,8 @@ as follows:
 Process hangs and doesn't finish:
 - https://askubuntu.com/questions/1062058/process-hangs-before-termination-with-ubuntu-18-04
 - https://github.com/Kevin-Mattheus-Moerman/Abaqus-Installation-Instructions-for-Ubuntu/issues/1
+- http://learningpatterns.me/posts-output/2018-01-30-abaqus-singularity/
 
-
+<!--
 How to avoid strange Fox-windows? After each start delete file $HOME/abaqus_2019.gpr?
-
-
-## TODO
-
-Have a look on http://learningpatterns.me/posts-output/2018-01-30-abaqus-singularity/
+-->
