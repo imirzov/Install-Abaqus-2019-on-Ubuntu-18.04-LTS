@@ -53,8 +53,12 @@ Connect Abaqus to online documentation and license:
 ```python
     doc_root="http://help.3ds.com"
     license_server_type=FLEXNET
-    abaquslm_license_file="27800@127.0.0.1"
+    abaquslm_license_file="27800@your_company_domain"
 ```
+
+License status in linux:
+
+    abaqus licensing ru
 
 <br/><br/>
 
@@ -123,7 +127,7 @@ Then make *.desktop executable:
 
 
 
-## MIMETYPES
+## MIMETYPES & ICONS
 
 Delete LibreOffice mime type for ODB:
 
@@ -176,15 +180,13 @@ Then update MIME database:
 
     sudo update-mime-database /usr/share/mime
 
-<!--
+Additionally install "MIME Type Editor" via software and edit file associations.
+
 Create icons for Abaqus file types:
 
-    sudo cp /media/ihor/WORK/Soft/WORK/Abaqus/Info/3DS.svg /usr/share/icons/Humanity/mimes/256/application-abaquscae.svg
-    sudo cp /media/ihor/WORK/Soft/WORK/Abaqus/Info/3DS.svg /usr/share/icons/Humanity/mimes/256/application-abaqusviewer.svg
+    sudo cp 3DS.svg /usr/share/icons/Humanity/mimes/256/application-abaquscae.svg
+    sudo cp 3DS.svg /usr/share/icons/Humanity/mimes/256/application-abaqusviewer.svg
     sudo gtk-update-icon-cache /usr/share/icons/Humanity -f
--->
-
-Additionally install "MIME Type Editor" via software and edit file associations.
 
 <br/><br/>
 
