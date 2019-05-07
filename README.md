@@ -98,8 +98,8 @@ Create shortcut for CAE:
     Version=1.0
     Name[en_US]=abaquscae
     Icon=/opt/SIMULIA/CAE/2019/linux_a64/CAEresources/graphic/icons/icoR_application.png
-    Exec=sh -c "export FILE=%u && cd $(dirname $FILE) && abaqus cae -mesa database=$FILE"
-    # Exec=abaqus cae -mesa database=%u
+    Exec=sh -c "export FILE=%u && cd $(dirname $FILE) && abaqus cae database=$FILE -mesa"
+    # Exec=abaqus cae database=%u -mesa
     Terminal=true
     Categories=Science;
 ```
@@ -114,8 +114,8 @@ Create shortcut for Viewer:
     Version=1.0
     Name[en_US]=abaqusviewer
     Icon=/opt/SIMULIA/CAE/2019/linux_a64/CAEresources/graphic/icons/icoR_application.png
-    Exec=sh -c "export FILE=%u && cd $(dirname $FILE) && abaqus viewer -mesa database=$FILE"
-    # Exec=abaqus view -mesa database=%u
+    Exec=sh -c "export FILE=%u && cd $(dirname $FILE) && abaqus viewer database=$FILE -mesa"
+    # Exec=abaqus view database=%u -mesa
     Terminal=true
     Categories=Science;
 ```
