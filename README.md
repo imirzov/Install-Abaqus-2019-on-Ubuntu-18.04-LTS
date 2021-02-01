@@ -247,16 +247,11 @@ For big displays font HELVETICA and sizes 17-20-25 are more appropriate:
 
 ## FORTRAN
 
-To use *gfortran* edit:
+To use *gfortran* overwrite:
 
     /opt/DassaultSystemes/SimulationServices/V6R2019x/linux_a64/SMA/site/lnx86_64.env
 
-as follows:
-
-- Change ifort to gfortran on the fortCmd line and make sure that g++ is on the cppCmd line
-- Remove gnu-incompatible compiler flags from the compile_fortran line (-V, -auto, -mP2OPT_hpo_vec_divbyzero=F, -extend_source, -fpp, -WB)
-- link_sl: remove command line options ‘-V’, ‘-cxxlib’, ‘-threads’, ‘-parallel’, ‘-shared-intel’
-- add '-lgfortran' to the link_sl and link_exe lines
+with [this file](./lnx86_64.env). Flag for free form Fortran is active. It works at least for gfortran 9.3.0.
 
 <br/><br/>
 
